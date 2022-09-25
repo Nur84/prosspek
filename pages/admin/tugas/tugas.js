@@ -1,6 +1,6 @@
 function formupload(id) {
     $.ajax({
-        url: "",
+        url: "./addmytugas",
         data: { id: id },
         type: "post",
         success: function (msg) {
