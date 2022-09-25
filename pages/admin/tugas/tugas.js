@@ -8,3 +8,6 @@ function formupload(id) {
         }
     })
 }
+function closeform() {
+    $('#detail').html('')
+}
