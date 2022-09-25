@@ -74,13 +74,3 @@
 			}
 		}
 	});
-	tinymce.editors[$(".editable").attr('id')].execCommand('mceRemoveControl', false, $(".editable"));
-	tinymce.editors["editor"].execCommand('mceRemoveControl', false, $("#editor"));
-
-	if (!window.console) {
-		window.console = {
-			log: function() {
-				tinymce.$('<div></div>').text(tinymce.grep(arguments).join(' ')).appendTo(document.body);
-			}
-		};
-	}
