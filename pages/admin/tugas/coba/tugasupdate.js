@@ -19,12 +19,11 @@ function detailtugas(id) {
     })
 }
 function hapustugas(id) {
-    alert(id)
-    // $.ajax({
-    //     url: "./hapusmytugas",
-    //     data: { id: id },
-    //     type: "post"
-    // })
+    $.ajax({
+        url: "./hapusmytugas",
+        data: { id: id },
+        type: "post"
+    })
     
 }
 function closeform() {
