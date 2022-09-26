@@ -18,6 +18,13 @@ function detailtugas(id) {
         }
     })
 }
+function hapustugas(id) {
+    $.ajax({
+        url: "./hapusmytugas",
+        data: { id: id },
+        type: "post"
+    })
+}
 function closeform() {
     $('#detail').html('')
 }
